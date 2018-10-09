@@ -1,0 +1,21 @@
+<div>
+  <h1 class="Issues__h1">React Repo Issues</h1>
+  <table class="Issues__table">
+    <thead>
+    <tr>
+      <th>No.</th>
+      <th>Title</th>
+      <th>State</th>
+      <th>Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let issue of issues; index as i;" (click)="setIssue(issue)">
+      <td>{{i + 1}}</td>
+      <td>{{issue.title}}</td>
+      <td>{{issue.state}}</td>
+      <td>{{issue.created_at}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

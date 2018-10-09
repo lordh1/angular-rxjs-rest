@@ -1,0 +1,5 @@
+<div *ngIf="checkIssue()">
+  <h1 class="Issue__h1">{{issue.title}}</h1>
+  <div>{{issue.body}}</div>
+  <div class="Issue__ButtonsArea"><button class="Issue__button" (click)="flushIssue()">Back</button></div>
+</div>
